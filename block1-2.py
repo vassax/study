@@ -1,4 +1,4 @@
-# Блок 1. Задача 2. Заочное. гр.1022-03. Васьков С.А.
+# Блок 1. Задача 2.
 randomString = input("введите строку - ")
 print("Длина строки - ", len(randomString), "символа(ов)")
 for i in randomString:
