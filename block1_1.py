@@ -1,13 +1,13 @@
 # Блок 1. Задача 1.
-import random
-randomNumber = random.randint(0, 100)
-print("Введите целое число от 0 до 100 = ")
-number = int(input())
-print("Случайное число = ", randomNumber)
-print("Введенное число = ", number)
-if randomNumber < number:
-    print("Случайное число меньше")
-elif randomNumber > number:
-    print("Случайное число больше")
+print("Введите число = ")
+number = float(input())
+print("Введите пограничное число = ")
+numberP = float(input())
+if number < numberP:
+    print("Ваше число меньше пограничного")
+elif number > numberP:
+    print("Ваше число больше пограничного")
+elif number > numberP*3:
+    print("Ваше число больше пограничного более, чем в 3 раза")
 else:
     print("Числа равны")
