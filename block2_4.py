@@ -1,12 +1,12 @@
 # Блок 2. Задача 4. Калькулятор
 import math
 import random
-# vs - возведение в степень, m - модуль, r - рандом, ! - факториал, ac - арккосинус
+# ^ - возведение в степень, m - модуль, r - рандом, ! - факториал, ac - арккосинус
 print('Возможные операторы: +, -, *, /')
-print('vs - возведение в степень, m - модуль, r - рандом, ! - факториал, ac - арккосинус')
+print('^ - возведение в степень, m - модуль, r - рандом, ! - факториал, ac - арккосинус')
 operator1 = input("Введите оператор : ")
 if operator1 == 'r':
-    print("Случайное число = ", random.uniform(-1000,1000))
+    print("Случайное число = ", random.uniform(-1000, 1000))
 else:
     number1 = float(input("Введите первое число : "))
     if operator1 == 'm':
@@ -32,5 +32,5 @@ else:
             if number2 == 0:
                 print("На 0 делить нельзя!")
             else: print("Частное = ", number1 / number2)
-        elif operator1 == 'vs':
+        elif operator1 == '^':
             print(number1, "в степени", number2, "=", number1 ** number2)

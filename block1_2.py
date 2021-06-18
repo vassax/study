@@ -1,4 +1,4 @@
-# Блок 1. Задача 2.
+# Блок 1. Задача 2. Строки
 randomString = input("введите строку - ")
 print("Длина строки - ", len(randomString), "символа(ов)")
 for i in randomString:
