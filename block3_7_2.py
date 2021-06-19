@@ -31,9 +31,9 @@ nameLower(vegetable3)
 nameUpper(vegetable3)
 nameTitle(vegetable3)
 
-countVegetable1 = input("Введите количество первого овоща: ")
-countVegetable2 = input("Введите количество второго овоща: ")
-countVegetable3 = input("Введите количество третьего овоща: ")
+countVegetable1 = input("Введите количество 1-го овоща: ")
+countVegetable2 = input("Введите количество 2-го овоща: ")
+countVegetable3 = input("Введите количество 3-го овоща: ")
 
 outSum(vegetable1, countVegetable1)
 outSum(vegetable2, countVegetable2)
