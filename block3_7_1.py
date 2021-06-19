@@ -41,23 +41,26 @@ def arc(number1):
 
 print('Возможные операторы: +, -, *, /')
 print('^ - возведение в степень, m - модуль, r - рандом, ! - факториал, ac - арккосинус')
+print('Для выхода наберите exit')
 Operator = input("Введите оператор : ")
-if Operator == "+":
-    plus(float(input("Первое число: ")), float(input("Второе число: ")))
-elif Operator == "-":
-    minus(float(input("Первое число: ")), float(input("Второе число: ")))
-elif Operator == "*":
-    multi(float(input("Первое число: ")), float(input("Второе число: ")))
-elif Operator == "/":
-    div(float(input("Первое число: ")), float(input("Второе число: ")))
-elif Operator == "^":
-    exp(float(input("Первое число: ")), float(input("Второе число: ")))
-elif Operator == "m":
-    mod(float(input("Введите число: ")))
-elif Operator == "r":
-    rand(float(input("Введите нижнюю границу случайного числа: ")),
-         float(input("Введите верхнюю границу случайного числа: ")))
-elif Operator == "!":
-    fact(int(input("Введите целое неотрицательное число: ")))
-elif Operator == "ac":
-    arc(float(input("Введите число в диапазоне от -1 до 1: ")))
+while Operator != "exit":
+    if Operator == "+":
+        plus(float(input("Первое число: ")), float(input("Второе число: ")))
+    elif Operator == "-":
+        minus(float(input("Первое число: ")), float(input("Второе число: ")))
+    elif Operator == "*":
+        multi(float(input("Первое число: ")), float(input("Второе число: ")))
+    elif Operator == "/":
+        div(float(input("Первое число: ")), float(input("Второе число: ")))
+    elif Operator == "^":
+        exp(float(input("Первое число: ")), float(input("Второе число: ")))
+    elif Operator == "m":
+        mod(float(input("Введите число: ")))
+    elif Operator == "r":
+        rand(float(input("Введите верхнюю границу случайного числа: ")),
+         float(input("Введите нижнюю границу случайного числа: ")))
+    elif Operator == "!":
+        fact(int(input("Введите целое неотрицательное число: ")))
+    elif Operator == "ac":
+        arc(float(input("Введите число в диапазоне от -1 до 1: ")))
+    Operator = input("Введите оператор : ")

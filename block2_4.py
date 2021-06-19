@@ -6,7 +6,7 @@ print('Возможные операторы: +, -, *, /')
 print('^ - возведение в степень, m - модуль, r - рандом, ! - факториал, ac - арккосинус')
 operator1 = input("Введите оператор : ")
 if operator1 == 'r':
-    print("Случайное число = ", random.uniform(-1000, 1000))
+    print("Случайное число = ", random.uniform(-1000,1000))
 else:
     number1 = float(input("Введите первое число : "))
     if operator1 == 'm':
@@ -15,7 +15,7 @@ else:
         number3 = int(abs(number1))
         print("Факториал определен на множестве целых неотрицательных чисел.")
         print("Поэтому посчитаем факториал от ", number3)
-        print(number3,"! = ", math.factorial(number3))
+        print(number3, "! = ", math.factorial(number3))
     elif operator1 == 'ac':
         if number1 < -1 or number1 > 1:
             print("Аргумент должен быть в диапазоне от -1 до 1")
